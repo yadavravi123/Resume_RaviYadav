@@ -1,0 +1,46 @@
+
+h1,nav,a{
+    text-align: center;
+    color:deepskyblue;
+}
+a{
+    word-spacing: 0px;
+}
+.welcome{
+    text-align: center;
+    
+    color:forestgreen;
+}
+/* class selectors
+h1,h2{
+    color:chocolate;
+}
+li {
+    list-style-type: square;
+}
+li.special,span.special{
+    color:blue;
+    font-weight: bold;
+}
+li em{
+    color:blue;
+
+}
+/* to select h2 just after h1 */
+/* h1+h2{
+    color: black;
+   font-size:100%;
+}
+a:hover{
+    color:red;
+    text-decoration: none;
+}
+body h2+span.special{
+    color:yellow;
+    background-color: black;
+} */ */
+/* end */
+/* id selectors */
+/* h2#heading{
+    color:yellow;
+} */
