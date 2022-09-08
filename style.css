@@ -11,6 +11,9 @@ a{
     
     color:forestgreen;
 }
+img{
+    border-radius: 50%;
+}
 /* class selectors
 h1,h2{
     color:chocolate;

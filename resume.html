@@ -5,13 +5,113 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
-    <style>
+    <!-- color is for text color -->
+        <style>
         body {
           background-image: url('./bkg/img.jpeg');
           color:white;
         }
+        button{
+            cursor: pointer;
+            border-radius: 5px;
+        
+        }
+        button:hover{
+            opacity: 0.7;
+        }
+        
+        .github{
+            background-color: black;
+            color:white;
+            height: 35px;
+            width: 70px;
+            margin-left: 5px;
+            font-weight: bold;
+        }
+        /* During clicking to the button */
+        button:active{
+            background-color: blue;
+        }
+        .navigation{
+            background-color:navy;
+            color: white;
+            border: none;
+            height: 25px;
+            width: 110px;
+            cursor: pointer;
+            border-radius: 18px;
+            box-shadow: 10px 10px 10px rgb(199, 192, 192);
+            margin-right: 50px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+
+            
+        }
+     
+        .navigation:hover{
+            box-shadow: 10px 10px 10px black;
+        }
+        .join{
+            color:blue;
+            border-color:blue;
+            height: 36px;
+            border-width: 2px;
+            margin-right: 8px;
+            font-weight: bold;
+            margin-left: 350px;
+
+        }
+        .join:hover{
+            background-color: blue;
+            color:white;
+        }
+        .twitter{
+            color:white;
+            background-color:rgb(41,118,211);
+            height: 36px;
+            width: 80px;
+            border-radius: 18px;
+            font-weight: bold;
+            font-size: 15px;
+        }
+        .linkedin{
+            height: 35px;
+            width: 70px;
+            background-color: rgb(8, 102, 234);
+            color:white;
+            font-weight: bolder;
+            margin-left: 10px;
+        }
+
+        .codechef,.codeforces{
+
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-left: 10px;
+            padding-right: 10px;
+            color:rgb(226, 210, 210);
+            font-weight: bold;
+            background-color: rgb(96, 42, 42);
+            margin-left: 10px;
+
+        }
+        .codeforces{
+            color:black;
+            background-color:aqua;
+        }
+
+
+
+
         </style>
 <link rel="stylesheet" href="style.css">
+<style>
+    img {
+      float: left;
+      border: 1px dotted black;
+      margin: 0px 0px 10px 20px;
+    }
+    </style>
 </head>
 <body>
     <header>
@@ -19,21 +119,28 @@
 </header>
    <h4 style="text-align:center">TECHNICAL EXECUTIVE AT VISION CSE</h4>
    <nav>
-        <a href="#">Home</a> &nbsp;
-        <a href="#">About</a> &nbsp;
-        <a href="#">Skills</a>&nbsp;
-        <a href="#">Education</a>&nbsp;
-        <a href="#">Achievements</a>
+        <a href="#"><button class="navigation">Home</button></a> &nbsp;
+        <a href="#"><button class="navigation">About</button></a> &nbsp;
+        <a href="#"><button class="navigation">Skills</button></a>&nbsp;
+        <a href="#"><button class="navigation">Education</button></a>&nbsp;
+        <a href="#"><button class="navigation">Achievements</button></a>
    </nav>
   <main>
     <section>
-        <h2>About me:</h2>
-        <p>I am currently pursuing BTECH in Computer Science from Maulana Azad National Institute of Technology
-           . I am a technology enthusiast and like doing problems solving. I am Technical Executive at Vision CSE which is a technical society of MANIT Bhopal.
-           Also I am CAMPUS AMBESSADOR at GEEKSFORGEEKS. I am  a kind of sports person and likes  playing badminton.
-           Currently I am exploring development fields.
+        <h2>About me:</h2>  
+        <p>
+            I am currently pursuing BTECH in Computer Science from Maulana Azad National Institute of Technology Bhopal 
+            . I am a technology enthusiast and like doing problems solving. I am Technical Executive at Vision CSE which is a technical society of MANIT Bhopal.
+            Also I am CAMPUS AMBESSADOR at GEEKSFORGEEKS. I am  a kind of sports person and likes  playing badminton. Currently I am exploring development fields.
         </p>
-   </section>  
+    
+        <!-- <p>
+            I am currently pursuing BTECH in Computer Science from Maulana Azad National Institute of Technology Bhopal 
+            . I am a technology enthusiast and like doing problems solving. I am Technical Executive at Vision CSE which is a technical society of MANIT Bhopal.
+            Also I am CAMPUS AMBESSADOR at GEEKSFORGEEKS. I am  a kind of sports person and likes  playing badminton.
+            Currently I am exploring development fields.</p>
+       -->
+       </section>  
    <section>
     <h2>Interests:</h2>
     <p>I like sketching, playing badminton, watching movies and listening songs.</p>
@@ -71,10 +178,15 @@
 </main>
 
     <footer>
-        <a href="#">contact</a>
+        <!-- <a href="#">contact</a>
         <a href="#">linkedin</a>
-        <a href="#">github</a>
-
+        <a href="#">github</a> -->
+        <button class="join">JOIN US</button>
+        <button class="twitter">Twitter</button>
+        <button class="github">GitHub</button>
+        <button class="linkedin">LinkedIn</button>
+        <button class="codechef">CODECHEF</button>
+        <button class="codeforces">CODEFORCES</button>
     </footer>
     
 </body>
