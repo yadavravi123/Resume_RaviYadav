@@ -6,117 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
     <!-- color is for text color -->
-        <style>
-        body {
-          background-image: url('./bkg/img.jpeg');
-          color:white;
-        }
-        button{
-            cursor: pointer;
-            border-radius: 5px;
-        
-        }
-        button:hover{
-            opacity: 0.7;
-        }
-        
-        .github{
-            background-color: black;
-            color:white;
-            height: 35px;
-            width: 70px;
-            margin-left: 5px;
-            font-weight: bold;
-        }
-        /* During clicking to the button */
-        button:active{
-            background-color: blue;
-        }
-        .navigation{
-            background-color:navy;
-            color: white;
-            border: none;
-            height: 25px;
-            width: 110px;
-            cursor: pointer;
-            border-radius: 18px;
-            box-shadow: 10px 10px 10px rgb(199, 192, 192);
-            margin-right: 50px;
-            padding-top: 5px;
-            padding-bottom: 5px;
-
-            
-        }
-     
-        .navigation:hover{
-            box-shadow: 10px 10px 10px black;
-        }
-        .join{
-            color:blue;
-            border-color:blue;
-            height: 36px;
-            border-width: 2px;
-            margin-right: 8px;
-            font-weight: bold;
-            margin-left: 350px;
-
-        }
-        .join:hover{
-            background-color: blue;
-            color:white;
-        }
-        .twitter{
-            color:white;
-            background-color:rgb(41,118,211);
-            height: 36px;
-            width: 80px;
-            border-radius: 18px;
-            font-weight: bold;
-            font-size: 15px;
-        }
-        .linkedin{
-            height: 35px;
-            width: 70px;
-            background-color: rgb(8, 102, 234);
-            color:white;
-            font-weight: bolder;
-            margin-left: 10px;
-        }
-
-        .codechef,.codeforces{
-
-            padding-top: 8px;
-            padding-bottom: 8px;
-            padding-left: 10px;
-            padding-right: 10px;
-            color:rgb(226, 210, 210);
-            font-weight: bold;
-            background-color: rgb(96, 42, 42);
-            margin-left: 10px;
-
-        }
-        .codeforces{
-            color:black;
-            background-color:aqua;
-        }
-
-
-
-
-        </style>
-<link rel="stylesheet" href="style.css">
-<style>
-    img {
-      float: left;
-      border: 1px dotted black;
-      margin: 0px 0px 10px 20px;
-    }
-    </style>
+    <link rel="stylesheet" href="style.css">
+   
+      
 </head>
 <body>
     <header>
    <h1>Hii there, This is Ravi!</h1>
 </header>
+<!-- <input type="text" placeholder="search"> -->
    <h4 style="text-align:center">TECHNICAL EXECUTIVE AT VISION CSE</h4>
    <nav>
         <a href="#"><button class="navigation">Home</button></a> &nbsp;
@@ -127,12 +25,16 @@
    </nav>
   <main>
     <section>
-        <h2>About me:</h2>  
-        <p>
+        <h2>About me:</h2> 
+        <img class="photo" src="./bkg/rav.jpg" alt=""> 
+        <div class="about_text">
+        <p class="about">
             I am currently pursuing BTECH in Computer Science from Maulana Azad National Institute of Technology Bhopal 
             . I am a technology enthusiast and like doing problems solving. I am Technical Executive at Vision CSE which is a technical society of MANIT Bhopal.
             Also I am CAMPUS AMBESSADOR at GEEKSFORGEEKS. I am  a kind of sports person and likes  playing badminton. Currently I am exploring development fields.
         </p>
+        </div>
+        
     
         <!-- <p>
             I am currently pursuing BTECH in Computer Science from Maulana Azad National Institute of Technology Bhopal 
@@ -142,37 +44,46 @@
        -->
        </section>  
    <section>
-    <h2>Interests:</h2>
-    <p>I like sketching, playing badminton, watching movies and listening songs.</p>
+    <h2 class="interest">Interests:</h2>
+    <p class="interest_text" style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif" >I like sketching, playing badminton, watching movies, listening songs
+         and exploring new technologies.</p>
+    <img class="ambedkar" src="./bkg/ambedkar.jpeg" alt="">
+    <img class="modi" src="./bkg/modi.jpg" alt="">
+    
    </section>
-  <section>
-    <h2>Skills:</h2>
-    <p>
-        <ul>
-            <li>C</li>
-            <li>C++</li>
-            <li>Problem solving</li>
+  <section >
+    <h2 class="skills">Skills:</h2>
+    
+            <img class="skillimage" src="./skills/1200px-C_Programming_Language.svg.png" alt="">
+            <img  class="skillimage" src="./skills/ISO_C++_Logo.svg.png" alt="">
+            <img class="problem" src="./skills/08a-TheStudy-Digital-Marketing.jpg" alt="">
+
         </ul>
     </p>
 </section>
-<section>
     <h2>Education:</h2>
-    <ul>
-    <li><h4>JNV Hoshangabad</h4></li>
-    <p>I have completed my high school and higher secondary schooling from Jawahar Navodaya Vidyalaya Hoshangabad</p>
-    <p>High school:<b> 93.8% ||</b> Higher Secondary: <b>94.6%</b></p>
-    <li><h4>CSRL Super 30, Kanpur</h4></li>
-</ul>
+    <div class="edu">
+    <div class="navodaya">
+        <a target="_blank" href="https://www.navodaya.gov.in/nvs/nvs-school/HOSHANGABAD/en/home/"><img class="jnv" src="./education/640px-Jawahar_Navodaya_Vidyalaya_logo,_jnvlogo.jpg" alt=""></a>
+        <p class="high">HIGHER SECONDARY</p>
+        <p class="high">PERCENTAGE: 94.6%</p>
 
-</section>
+    </div>
+    <div class="manit">
+       <a target="_blank" href="http://www.manit.ac.in/"><img class="manit_logo" src="./education/Maulana_Azad_National_Institute_of_Technology_Logo.png" alt=""></a>
+        <p class="btech" >B.TECH(CSE)</p>
+        <p class="btech">CGPA: 8.31</p>
+    </div>
+</div>
+    
+   
 <section>
     <h2>Achievements:</h2>
-        <ul>
+        <ul class="achievements" style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
             <li>Regional Science Congress 2018 (organised by NVS Bhopal) Participant</li>
             <li>FFE Scholar</li>
             <li>Regional Level Badminton Player</li>
         </ul>
-
 </section>
 
 </main>
@@ -182,11 +93,11 @@
         <a href="#">linkedin</a>
         <a href="#">github</a> -->
         <button class="join">JOIN US</button>
-        <button class="twitter">Twitter</button>
-        <button class="github">GitHub</button>
-        <button class="linkedin">LinkedIn</button>
-        <button class="codechef">CODECHEF</button>
-        <button class="codeforces">CODEFORCES</button>
+        <a href="https://twitter.com/Yadav_Ravi123"><button class="twitter">Twitter</button></a>
+        <a target="_blank" href="https://github.com/yadavravi123"><button class="github">GitHub</button></a>
+        <a target="_blank" href="https://www.linkedin.com/in/ravi-yadav-0966ba224/"><button class="linkedin">LinkedIn</button></a>
+        <a target="_blank" href="https://www.codechef.com/users/rav_yadav"><button class="codechef">CODECHEF</button></a>
+        <a target="_blank" href="https://codeforces.com/profile/yadav_ravi"><button class="codeforces">CODEFORCES</button></a>
     </footer>
     
 </body>
